@@ -3,7 +3,7 @@ import { env } from './env.js';
 import { logger } from '../utils/logger.js';
 
 export async function connectDatabase(customUri) {
-  const uri = customUri || env.MONGO_URI || env.mongodbUri;
+  const uri = customUri || env.MONGO_URI || env.mongodbUri || 'mongodb://127.0.0.1:27017/url_shortener';
 
   mongoose.set('strictQuery', true);
 
