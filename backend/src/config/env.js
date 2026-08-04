@@ -7,5 +7,10 @@ export const env = {
   PORT: Number(PORT),
   MONGO_URI,
   BASE_URL,
-  NODE_ENV
+  NODE_ENV,
+  // Backward compatibility getters
+  port: Number(PORT),
+  mongodbUri: MONGO_URI,
+  baseUrl: BASE_URL,
+  nodeEnv: NODE_ENV
 };
