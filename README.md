@@ -26,8 +26,8 @@ The objective was to create a clean, maintainable URL shortener demonstrating:
 ## Live Demo
 
 - **Frontend**: https://linkpulse-sigma.vercel.app
-- **Backend API**: https://linkpulse-api.onrender.com
-- **Health Check**: https://linkpulse-api.onrender.com/health
+- **Backend API**: https://linkpulse-159i.onrender.com
+- **Health Check**: https://linkpulse-159i.onrender.com/health
 
 ---
 
@@ -52,8 +52,8 @@ The objective was to create a clean, maintainable URL shortener demonstrating:
 ## Deployment
 
 - Frontend deployed on Vercel (`https://linkpulse-sigma.vercel.app`)
-- Backend deployed on Render (`https://linkpulse-api.onrender.com`)
-- Database hosted on MongoDB Atlas
+- Backend deployed on Render (`https://linkpulse-159i.onrender.com`)
+- Database hosted on MongoDB Atlas / in-memory cluster
 
 ---
 
@@ -86,12 +86,12 @@ MongoDB was chosen because each shortened link is represented as a single docume
 ```env
 PORT=5000
 MONGO_URI=<your-mongodb-uri>
-BASE_URL=https://linkpulse-api.onrender.com
+BASE_URL=https://linkpulse-159i.onrender.com
 ```
 
 ### Frontend (`frontend/.env`)
 ```env
-VITE_API_BASE_URL=https://linkpulse-api.onrender.com
+VITE_API_BASE_URL=https://linkpulse-159i.onrender.com
 ```
 
 ---
